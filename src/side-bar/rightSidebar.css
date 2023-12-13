@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.right-side-bar{
+    width: 100%;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    background: #fff;
+    padding: 10px 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-bottom: 20px;
+}
+.nightMode{
+    width: 70px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.bt-menu{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+}
+.bt-menu:hover{
+    background-color: #4ed3e1;
+}
+#chk{
+    display: none;
+}
+.check-mode{
+    width: 20px;
+    height: 20px;
+    color: #183153;
+}
+
+.switch{
+    position: relative;
+    background-color: #777;
+    width: 50px;
+    height: 25px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.slider{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transition: all .5s ease-in-out;
+}
+
+#chk:checked ~ .switch{
+    background-color: #4ed3e1;
+}
+
+#chk:checked ~ .switch .slider{
+    transform: translateX(23px);
+
+}
+.element-x, .element-y{
+    margin-right: 5px;
+}
+.element-x{
+    color: #fff;
+}
+
+.colaborador-card{
+    width: 100%;
+    padding: 5px;
+    background-color: #0c7391;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.main-bottom{
+    height: 430px;
+    display: flex;
+    border-radius: 15px;justify-content: center;
+}
+
+.ratings{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-bottom: 10px;
+}
+.ratingChat, .ratingLigacoes, .ratingResolvidos,  .ratingFechamentos{
+    padding: 5px;
+    background-color: #0c7391;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin: 5px 0;
+    color: #ffffff;
+}
+.ratingGeral{
+    width: 100%px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.colaborador{
+    color: #fff;
+}
+
+.others{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: auto;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card-side{
+    width: 100%;
+    height: 110px;
+    background-color: #183153;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:  25px;
+    padding: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    
+}
+.card-side:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
